@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<title>Technical Documentation Page</title>
+	<nav id="navbar">
+	<header>C++ Documentation</header>
+	<ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Usage_of_C++">Usage of C++</a></li>
+    <li>
+      <a class="nav-link" href="#Difference_between_c_&_c++">Difference between c & c++</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Rules_for_defining_variables">Rules for defining variables</a>
+    </li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Function_declarations"
+        >Function declarations</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+	</nav>
+</head>
+<body>
+   <main id="main-doc">
+   	<section class="main-section" id="Introduction">
+   		<header>Introduction</header>
+   		<p>C++ is an object-oriented programming language. It is an extension to C programming.Standard C++ programming is divided into three important parts:</p>
+   		<ul>
+   			<li>The core library includes the data types, variables and literals, etc.</li>
+        <li>The standard library includes the set of functions manipulating strings, files, etc.</li>
+        <li>The Standard Template Library (STL) includes the set of methods manipulating a data structure.</li>
+   		</ul>
+   	</section>
+    <section class="main-section" id="Usage_of_C++">
+      <header>Usage of C++</header>
+      <p>By the help of C++ programming language, we can develop different types of secured and robust applications:</p>
+      <ul>
+        <li>Window application</li>
+        <li>Client-Server application</li>
+        <li>Device drivers</li>
+        <li>Embedded firmware etc</li>
+      </ul>
+    </section>
+   	<section class="main-section" id="Difference_between_c_&_c++">
+   		<header>Difference between c & c++</header>
+   		<p>C is a structural programming language, and it does not support classes and objects, while C++ is an object-oriented programming language that supports the concept of classes and objects.C supports the structural programming language where the code is checked line by line, while C++ is an object-oriented programming language that supports the concept of classes and objects.<br>
+
+      C follows the top-down approach, while C++ follows the bottom-up approach. The top-down approach breaks the main modules into tasks; these tasks are broken into sub-tasks, and so on. The bottom-down approach develops the lower level modules first and then the next level modules.<br>
+
+      C does not support the reference variables, while C++ supports the reference variables.C contains 32 keywords, and C++ supports 52 keywords.In C, scanf and printf functions are used for input and output operations, respectively, while in C++, cin and cout are used for input and output operations, respectively.nheritance is a feature that allows the child class to reuse the properties of the parent class. C language does not support the inheritance while C++ supports the inheritance.
+      C program uses <stdio.h> header file while C++ program uses <iostream.h> header file.
+      </p>
+   	</section>
+   	<section class="main-section" id="Hello_world">
+   		<header>Hello world</header>
+   		<p>All C++ programs are given with C++ compiler so that you can easily change the C++ program code.</p>
+   		<code>#include <iostream>  
+            using namespace std;  
+            int main() {  
+            cout << "Hello world";  
+            return 0;  
+            }  
+      </code>
+   	</section>
+   	<section class="main-section" id="Variables">
+   		<header>Variables</header>
+   		<p>A variable is a name of memory location. It is used to store data. Its value can be changed and it can be reused many times.
+         It is a way to represent memory location through symbol so that it can be easily identified.Let's see the syntax to declare a variable:
+      </p>
+   		<code>type variable_list;</code>
+      <p>The example of declaring variable is given below:</p>
+      <ul>
+      <li><code>int x;    
+            float y;    
+            char z;   
+          </code>
+      <p>Here, x, y, z are variables and int, float, char are data types.</p>    
+      </li>
+      <li>
+        <p>We can also provide values while declaring the variables as given below:</p>
+        <code>int x=5,b=10;  //declaring 2 variable of integer type    
+              float f=30.8;    
+              char c='A';
+        </code>
+      </li>
+    </ul>
+   	</section>
+   	<section class="main-section" id="Rules_for_defining_variables">
+   		<header>Rules for defining variables</header>
+   		<p>A variable can have alphabets, digits and underscore.
+       A variable name can start with alphabet and underscore only. It can't start with digit.
+       No white space is allowed within variable name.
+       A variable name must not be any reserved word or keyword e.g. char, float etc.
+       Valid variable names:</p>
+   		<code>int a;    
+            int _ab;    
+            int a30;   
+      </code>
+   	</section>
+   	<section class="main-section" id="Data_types">
+   		<header>Data types</header>
+   		<p>A data type specifies the type of data that a variable can store such as integer, floating, character etc.The basic data types are integer-based and floating-point based. C++ language supports both signed and unsigned literals.
+
+      The memory size of basic data types may change according to 32 or 64 bit operating system. There are 4 types of data types in C++ language.</p>
+   		<ol>
+   			<li>Basic Data Type - int, char, float, double, etc</li>
+        <li>Derived Data Type - array, pointer, etc</li>
+        <li>Enumeration Data Type - enum</li>
+        <li>User Defined Data Type - structure</li>
+   		</ol>
+   	</section>
+   	<section class="main-section" id="if...else_statement">
+   		<header>if...else statement</header>
+   		<p>In C++ programming, if statement is used to test the condition. There are various types of if statements in C++.</p>
+      <ul>
+        <li>if statement</li>
+        <li>if-else statement</li>
+        <li>nested if statement</li>
+        <li>if-else-if ladder</li>
+      </ul>
+      <p>The C++ if statement tests the condition. It is executed if condition is true.Syntax:</p>
+   		<code>if(condition){    
+            //code to be executed    
+            }  </code>
+      <p>The C++ if-else statement also tests the condition. It executes if block if condition is true otherwise else block is executed. Syntax:</p>
+      <code>if(condition){    
+            //code if condition is true    
+            }else{    
+            //code if condition is false    
+            }  </code>
+   	</section>
+   	<section class="main-section" id="Function_declarations">
+   		<header>Function declarations</header>
+   		<p>A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.
+
+      You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division usually is such that each function performs a specific task.
+
+      A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function. Example of function declaration:</p>
+   		<code>#include <iostream>
+            using namespace std;
+ 
+            // function declaration
+            int max(int num1, int num2);
+             
+            int main () {
+               // local variable declaration:
+               int a = 100;
+               int b = 200;
+               int ret;
+             
+               // calling a function to get max value.
+               ret = max(a, b);
+               cout << "Max value is : " << ret << endl;
+             
+               return 0;
+            }
+ 
+            // function returning the max between two numbers
+            int max(int num1, int num2) {
+               // local variable declaration
+               int result;
+             
+               if (num1 > num2)
+                  result = num1;
+               else
+                  result = num2;
+             
+               return result; 
+            }</code>
+   	</section>
+   	<section class="main-section" id="Reference">
+   		<header>Reference</header>
+   		<p>All the documentation in this page is taken from:</p>
+      <ul>
+      <li>www.javatpoint.com</li>
+      <li>www.tutorialspoint.com</li>
+    </ul>
+   	</section>
+   </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
